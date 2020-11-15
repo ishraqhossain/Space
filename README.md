@@ -1,4 +1,7 @@
-##Things to install:
+Everything borrowed from: https://guides.rubyonrails.org/getting_started.html
+
+Things to install:
+
 <ul>
 <li>Ruby</li>
 <li>SQLite3</li>
@@ -9,7 +12,7 @@
 Run this code to install rails:
 <code>gem install rails</code>.
 
-##Rails structure summary:
+Rails structure summary:
 
 <table>
 <tbody>
@@ -126,13 +129,13 @@ end</nano>
   
   In your view file there should be something like this: new.html.erb. 
   
-  ##The extension of this file name is important: 
+  The extension of this file name is important: 
   
   the first extension is the format of the template, and the second extension is the handler that will be used to render the template. Rails is attempting to find a template called articles/new within app/views for the application. The format for this template can only be html and the default handler for HTML is erb. Rails uses other handlers for other formats. builder handler is used to build XML templates and coffee handler uses CoffeeScript to build JavaScript templates. Since you want to create a new HTML form, you will be using the ERB language which is designed to embed Ruby in HTML.
   
  
 
-##Controller Spec:
+Controller Spec:
 
 <nano>
 def create
@@ -150,8 +153,8 @@ The render method here is taking a very simple hash with a key of :plain and val
   end</nano>
   
   
-##Models aregenerated using this following code on terminal
-Rails generate model Article title:string text:text</nano>
+Models are generated using this following code on terminal
+<nano>Rails generate model Resource title:string text:text</nano>
 
 
   
